@@ -31,6 +31,10 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 
 ## Deploy on Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Se usa PostgreSQL, por lo que hay que conectar la base de datos con variable de entorno, tambien el token y el api de google
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+```bash
+DATABASE_URL="postgresql://ejemplo:ejemplo@localhost:5432/ejemplo?schema=public"
+JWT_SECRET="ejemplo"
+YOUTUBE_API_KEY="ejemplo"
+```
