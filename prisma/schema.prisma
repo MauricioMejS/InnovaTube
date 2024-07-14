@@ -30,7 +30,6 @@ model Favorite{
   userId     Int
   videoId    String
   title      String
-  url        String
-  description String?
+  image      String
   addedAt    DateTime @default(now())
 }

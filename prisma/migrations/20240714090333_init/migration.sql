@@ -17,8 +17,7 @@ CREATE TABLE "Favorite" (
     "userId" INTEGER NOT NULL,
     "videoId" TEXT NOT NULL,
     "title" TEXT NOT NULL,
-    "url" TEXT NOT NULL,
-    "description" TEXT,
+    "image" TEXT NOT NULL,
     "addedAt" TIMESTAMP(3) NOT NULL DEFAULT CURRENT_TIMESTAMP,
 
     CONSTRAINT "Favorite_pkey" PRIMARY KEY ("id")
