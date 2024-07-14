@@ -39,6 +39,7 @@ export async function POST(req) {
 
     const response = NextResponse.json({ message: 'Login exitoso', user }, { status: 200 });
     response.headers.set('Set-Cookie', cookieSerialized);
+    response.headers.set('id', user.id);
 
     return response;
   } catch (error) {

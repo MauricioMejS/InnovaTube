@@ -34,6 +34,11 @@ export default function Login() {
             button: true,
           })
         }
+        return res.json();
+      })
+      .then((data) => {
+        console.log(data);
+        localStorage.setItem("clientId", data.user.id);
       })
       .catch((error) => {
         console.error("Error al loguear usuario", error);
