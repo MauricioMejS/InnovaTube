@@ -43,8 +43,10 @@ export async function POST(req) {
       path: '/',
     });
 
+ 
     const response = NextResponse.json(newUser, { status: 201 });
     response.headers.set('Set-Cookie', cookieSerialized);
+    response.headers.set('id', newUser.id);
 
     return response;
   } catch (error) {

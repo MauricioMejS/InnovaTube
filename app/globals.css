@@ -30,3 +30,12 @@ body {
     text-wrap: balance;
   }
 }
+
+.label-container {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  -webkit-line-clamp: 2; /* Número de líneas máximo */
+  line-height: 1.5; /* Altura de línea deseada */
+  max-height: 3em; /* Altura máxima en píxeles o em */
+}
